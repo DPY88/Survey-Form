@@ -44,7 +44,6 @@
                     <div>
                         <label for="map">What is your favorite zombies map on the <abbr title="Black Ops 3">BO3</abbr> base game?</label>
                         <select name="map" id="map" required>
-                            <optgroup>
                                 <option value disabled selected>Select favorite map</option>
                                 <option value="soe">Shadows Of Evil</option>
                                 <option value="giant">The Giant</option>
@@ -52,14 +51,11 @@
                                 <option value="zns">Zetsubou No Shima</option>
                                 <option value="gk">Gorod Krovi</option>
                                 <option value="revelations">Revelations</option>
-
-                            </optgroup>
                         </select>
                     </div>
                     <div>
                         <label for="favorite">What is your favorite feature on this map?</label>
                         <select name="favorite" id="favorite" required>
-                            <optgroup>
                                 <option value disabled selected>Select favorite feature</option>
                                 <option value="base-lighting">Lighting Design</option>
                                 <option value="base-sound">Sound Design</option>
@@ -69,7 +65,6 @@
                                 <option value="base-perks">Perks</option>
                                 <option value="base-weapons">Weapons</option>
                                 <option value="base-gg">Gobblegum</option>
-                            </optgroup>
                         </select>
                     </div>
                     <div>
@@ -100,7 +95,7 @@
                     </div>
                     <div>
                         <label for="suggestions">Any comments or suggestions?</label>
-                        <textarea name="suggestions" id="suggestions" cols="30" rows="10" placeholder="Enter your suggestions here..."></textarea>
+                        <textarea required name="suggestions" id="suggestions" cols="30" rows="10" placeholder="Enter your suggestions here..."></textarea>
                     </div>
                     <div>
                         <button type="submit" id="submit" >
