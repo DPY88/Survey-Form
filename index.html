@@ -16,29 +16,29 @@
         </header>
         <div>
             <main>
-                <form>
+                <form action="https://httpbin.org/post" method="post">
                     <label for=""></label>
                     <div>
                     <label for="name">Name</label>
-                    <input type="text" value="name" id="name" placeholder="Enter your name" required>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
                     </div>
                     <div>
                     <label for="Email">Email</label>
-                    <input type="email" value="email" id="email" placeholder="Enter your email" required>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
                     </div>
                     <div>
                     <label for="age">Age (optional)</label>
-                    <input type="number" value="age" id="age" placeholder="Age" min="17" max="99">
+                    <input type="number" name="age" value="age" id="age" placeholder="Age" min="17" max="99">
                     </div>
                     <div>
                         <p>Would you reccommend <abbr title="Black Ops 3">BO3</abbr> Zombies to someone else?</p>
-                        <input type="radio" name="reccommend" value="definitely">
+                        <input type="radio" name="reccommend" required value="definitely">
                         <label for="definitely">Definitely</label>
 
-                        <input type="radio" name="reccommend" value="maybe">
+                        <input type="radio" name="reccommend"  required value="maybe">
                         <label for="maybe">Maybe</label>
 
-                        <input type="radio" name="reccommend" value="unsure">
+                        <input type="radio" name="reccommend" required value="unsure">
                         <label for="unsure">Unsure</label>
                     </div>
                     <div>
@@ -74,28 +74,28 @@
                     </div>
                     <div>
                         <label for="zc-map">Which of the Zombies Chronicles maps are your favorite? (Check all that apply)</label>
-                        <input type="checkbox" value="nacht">
+                        <input type="checkbox" name="zc-map" value="nacht">
                         <label for="nacht">Nacht der Untoten</label>
 
-                        <input type="checkbox" value="verrückt">
+                        <input type="checkbox" name="zc-map" value="verrückt">
                         <label for="verrückt">Verrückt</label>
 
-                        <input type="checkbox" value="shi">
+                        <input type="checkbox" name="zc-map" value="shi">
                         <label for="shi">Shi No Numa</label>
 
-                        <input type="checkbox" value="kino">
+                        <input type="checkbox" name="zc-map" value="kino">
                         <label for="kino">Kino der Toten</label>
 
-                        <input type="checkbox" value="ascension">
+                        <input type="checkbox" name="zc-map" value="ascension">
                         <label for="ascension">Ascension</label>
 
-                        <input type="checkbox" value="shang">
+                        <input type="checkbox" name="zc-map" value="shang">
                         <label for="shang">Shangri-La</label>
 
-                        <input type="checkbox" value="moon">
+                        <input type="checkbox" name="zc-map" value="moon">
                         <label for="moon">Moon</label>
 
-                        <input type="checkbox" value="origins">
+                        <input type="checkbox" name="zc-map" value="origins">
                         <label for="origins">Origins</label>
                     </div>
                     <div>
@@ -103,7 +103,7 @@
                         <textarea name="suggestions" id="suggestions" cols="30" rows="10" placeholder="Enter your suggestions here..."></textarea>
                     </div>
                     <div>
-                        <button type="submit" id="submit">
+                        <button type="submit" id="submit" >
                             Submit
                         </button>
                     </div>
