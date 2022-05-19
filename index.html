@@ -19,56 +19,60 @@
                 <form action="https://httpbin.org/post" method="post" id="survey-form">
                     <label for=""></label>
                     <div>
-                    <label for="name" id="name-label">Name</label>
-                    <input class="block" type="text" name="name" id="name" placeholder="Enter your name" required>
+                        <label for="name" id="name-label">Name</label>
+                        <input class="block" type="text" name="name" id="name" placeholder="Enter your name" required>
                     </div>
                     <div>
-                    <label for="email" id="email-label">Email</label>
-                    <input class="block" type="email" name="email" id="email" placeholder="Enter your email" required>
+                        <label for="email" id="email-label">Email</label>
+                        <input class="block" type="email" name="email" id="email" placeholder="Enter your email" required>
                     </div>
                     <div>
-                    <label for="age" id="number-label">Age (optional)</label>
-                    <input class="block" type="number" name="age" value="age" id="number" placeholder="Age" min="17" max="99">
+                        <label for="age" id="number-label">Age (optional)</label>
+                        <input class="block" type="number" name="age" value="age" id="number" placeholder="Age" min="17" max="99">
                     </div>
                     <div>
                         <div class="block">
                         <p>Would you reccommend <abbr title="Black Ops 3">BO3</abbr> Zombies to someone else?</p>
-                        <input type="radio" name="reccommend" required value="definitely">
-                        <label for="definitely">Definitely</label>
+                            <input type="radio" name="recommend" required value="definitely">
+                            <label for="definitely">Definitely</label>
                         </div>
                         <div class="block">
-                        <input type="radio" name="reccommend"  required value="maybe">
-                        <label for="maybe">Maybe</label>
+                            <input type="radio" name="recommend"  required value="maybe">
+                            <label for="maybe">Maybe</label>
                         </div>
                         <div class="block">
-                        <input type="radio" name="reccommend" required value="unsure">
-                        <label for="unsure">Unsure</label>
+                            <input type="radio" name="recommend" required value="unsure">
+                            <label for="unsure">Unsure</label>
+                        </div>
+                        <div class="block">
+                            <input type="radio" name="recommend" required value="no">
+                            <label for="no">No</label>
                         </div>
                     </div>
                     <div>
                         <label for="map">What is your favorite zombies map on the <abbr title="Black Ops 3">BO3</abbr> base game?</label>
                         <select class="block" name="map" id="dropdown" required>
-                                <option value disabled selected>Select favorite map</option>
-                                <option value="soe">Shadows Of Evil</option>
-                                <option value="giant">The Giant</option>
-                                <option value="de">Der Eisendrache</option>
-                                <option value="zns">Zetsubou No Shima</option>
-                                <option value="gk">Gorod Krovi</option>
-                                <option value="revelations">Revelations</option>
+                            <option value disabled selected>Select favorite map</option>
+                             <option value="soe">Shadows Of Evil</option>
+                            <option value="giant">The Giant</option>
+                            <option value="de">Der Eisendrache</option>
+                            <option value="zns">Zetsubou No Shima</option>
+                            <option value="gk">Gorod Krovi</option>
+                            <option value="revelations">Revelations</option>
                         </select>
                     </div>
                     <div>
                         <label for="favorite">What is your favorite feature on this map?</label>
                         <select class="block" name="favorite" id="favorite" required>
-                                <option value disabled selected>Select favorite feature</option>
-                                <option value="base-lighting">Lighting Design</option>
-                                <option value="base-sound">Sound Design</option>
-                                <option value="base-setting">Setting</option>
-                                <option value="base-ee">Easter Egg</option>
-                                <option value="base-miniboss">Miniboss</option>
-                                <option value="base-perks">Perks</option>
-                                <option value="base-weapons">Weapons</option>
-                                <option value="base-gg">Gobblegum</option>
+                            <option value disabled selected>Select favorite feature</option>
+                            <option value="base-lighting">Lighting Design</option>
+                            <option value="base-sound">Sound Design</option>
+                            <option value="base-setting">Setting</option>
+                            <option value="base-ee">Easter Egg</option>
+                            <option value="base-miniboss">Miniboss</option>
+                            <option value="base-perks">Perks</option>
+                            <option value="base-weapons">Weapons</option>
+                            <option value="base-gg">Gobblegum</option>
                         </select>
                     </div>
                     <div>
