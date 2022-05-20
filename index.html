@@ -9,51 +9,53 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div>
-        <header>
+    <div class="background">
+        <header class="header">
             <h1 id="title">Call of Duty: Black Ops 3 Survey</h1>
             <p id="description">Thank you for taking the time to help us pick the best <abbr title="Black Ops 3">BO3</abbr> Map</p>
         </header>
-        <div>
-            <main>
+        <div class="form-background">
+            <main class="form">
                 <form action="https://httpbin.org/post" method="post" id="survey-form">
                     <label for=""></label>
-                    <div>
+                    <div class="personal-info">
                         <label for="name" id="name-label">Name</label>
-                        <input class="block" type="text" name="name" id="name" placeholder="Enter your name" required>
+                        <input class="block personal-entry" type="text" name="name" id="name" placeholder="Enter your name" required>
                     </div>
-                    <div>
+                    <div class="personal-info">
                         <label for="email" id="email-label">Email</label>
-                        <input class="block" type="email" name="email" id="email" placeholder="Enter your email" required>
+                        <input class="block personal-entry" type="email" name="email" id="email" placeholder="Enter your email" required>
                     </div>
-                    <div>
+                    <div class="personal-info">
                         <label for="age" id="number-label">Age (optional)</label>
-                        <input class="block" type="number" name="age" value="age" id="number" placeholder="Age" min="17" max="99">
+                        <input class="block personal-entry" type="number" name="age" value="age" id="number" placeholder="Age" min="17" max="99">
                     </div>
-                    <div>
-                        <div class="block">
-                        <p>Would you reccommend <abbr title="Black Ops 3">BO3</abbr> Zombies to someone else?</p>
+                    <div class="recommend">
+                        <div class="block recommend-title">
+                        <p>Would you recommend <abbr title="Black Ops 3">BO3</abbr> Zombies to someone else?</p>
+                        </div>
+                        <div class="block recommend-entry">
                             <input type="radio" name="recommend" required value="definitely">
                             <label for="definitely">Definitely</label>
                         </div>
-                        <div class="block">
+                        <div class="block recommend-entry">
                             <input type="radio" name="recommend"  required value="maybe">
                             <label for="maybe">Maybe</label>
                         </div>
-                        <div class="block">
+                        <div class="block recommend-entry">
                             <input type="radio" name="recommend" required value="unsure">
                             <label for="unsure">Unsure</label>
                         </div>
-                        <div class="block">
+                        <div class="block recommend-entry last">
                             <input type="radio" name="recommend" required value="no">
                             <label for="no">No</label>
                         </div>
                     </div>
-                    <div>
-                        <label for="map">What is your favorite zombies map on the <abbr title="Black Ops 3">BO3</abbr> base game?</label>
-                        <select class="block" name="map" id="dropdown" required>
+                    <div class="basegame">
+                        <label for="map" class="basegame-title">What is your favorite zombies map on the <abbr title="Black Ops 3">BO3</abbr> base game?</label>
+                        <select class="block basegame-select" name="map" id="dropdown" required aria-placeholder="Select favorite map">
                             <option value disabled selected>Select favorite map</option>
-                             <option value="soe">Shadows Of Evil</option>
+                            <option value="soe">Shadows Of Evil</option>
                             <option value="giant">The Giant</option>
                             <option value="de">Der Eisendrache</option>
                             <option value="zns">Zetsubou No Shima</option>
@@ -61,9 +63,9 @@
                             <option value="revelations">Revelations</option>
                         </select>
                     </div>
-                    <div>
-                        <label for="favorite">What is your favorite feature on this map?</label>
-                        <select class="block" name="favorite" id="favorite" required>
+                    <div class="feature">
+                        <label for="favorite" class="feature-title">What is your favorite feature on this map?</label>
+                        <select class="block feature-select" name="favorite" id="favorite" required>
                             <option value disabled selected>Select favorite feature</option>
                             <option value="base-lighting">Lighting Design</option>
                             <option value="base-sound">Sound Design</option>
@@ -75,47 +77,47 @@
                             <option value="base-gg">Gobblegum</option>
                         </select>
                     </div>
-                    <div>
-                        <label class="block" for="zc-map">Which of the Zombies Chronicles maps are your favorite? (Check all that apply)</label>
-                        <div class="block">
+                    <div class="zc">
+                        <label class="block zc-title" for="zc-map">Which of the Zombies Chronicles maps are your favorite? <br>(Check all that apply)</label>
+                        <div class="block checkbox">
                             <input type="checkbox" name="zc-map" value="nacht">
                             <label for="nacht">Nacht der Untoten</label>
                         </div>
-                        <div class="block">
+                        <div class="block checkbox">
                             <input type="checkbox" name="zc-map" value="verrückt">
                             <label for="verrückt">Verrückt</label>                            
                         </div>
-                        <div class="block">
+                        <div class="block checkbox">
                             <input type="checkbox" name="zc-map" value="shi">
                             <label for="shi">Shi No Numa</label>
                         </div>
-                        <div class="block">
+                        <div class="block checkbox">
                             <input type="checkbox" name="zc-map" value="kino">
                             <label for="kino">Kino der Toten</label>
                         </div>
-                        <div class="block">
+                        <div class="block checkbox">
                             <input type="checkbox" name="zc-map" value="ascension">
                             <label for="ascension">Ascension</label>
                         </div>
-                        <div class="block">
+                        <div class="block checkbox">
                             <input type="checkbox" name="zc-map" value="shang">
                             <label for="shang">Shangri-La</label>
                         </div>
-                        <div class="block">
+                        <div class="block checkbox">
                             <input type="checkbox" name="zc-map" value="moon">
                             <label for="moon">Moon</label>
                         </div>
-                        <div class="block">
+                        <div class="block checkbox">
                             <input type="checkbox" name="zc-map" value="origins">
                             <label for="origins">Origins</label>
                         </div>
                     </div>
-                    <div>
-                        <label class="block" for="suggestions">Any comments or suggestions?</label>
-                        <textarea class="block" required name="suggestions" id="suggestions" cols="30" rows="10" placeholder="Enter your suggestions here..."></textarea>
+                    <div class="suggestions">
+                        <label class="block suggestions-title" for="suggestions">Any comments or suggestions?</label>
+                        <textarea class="block suggestions-area" required name="suggestions" id="suggestions" cols="30" rows="6" placeholder="Enter your suggestions here..."></textarea>
                     </div>
                     <div>
-                        <button type="submit" id="submit" >
+                        <button type="submit" id="submit" class="submit">
                             Submit
                         </button>
                     </div>
@@ -123,6 +125,5 @@
             </main>
         </div>
     </div>
-
 </body>
 </html>
