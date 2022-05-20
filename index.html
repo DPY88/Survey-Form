@@ -5,8 +5,8 @@
     <meta name="author" content="Alex Brooks">
     <meta name="description" content="Basic Survey Form For freeCodeCamp.org">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-    <title>Survey Form</title>
     <link rel="stylesheet" href="styles.css">
+    <title>BO3 Survey Form</title>
 </head>
 <body>
     <div class="background">
@@ -28,12 +28,10 @@
                     </div>
                     <div class="personal-info">
                         <label for="age" id="number-label">Age (optional)</label>
-                        <input class="block personal-entry" type="number" name="age" value="age" id="number" placeholder="Age" min="17" max="99">
+                        <input class="block personal-entry" type="number" name="age" id="number" placeholder="Age" min="17" max="99">
                     </div>
                     <div class="recommend">
-                        <div class="block recommend-title">
-                        <p>Would you recommend <abbr title="Black Ops 3">BO3</abbr> Zombies to someone else?</p>
-                        </div>
+                        <label for="recommend" class="recommend-title">Would you recommend <abbr title="Black Ops 3">BO3</abbr> Zombies to someone else?</label>
                         <div class="block recommend-entry">
                             <input type="radio" name="recommend" required value="definitely">
                             <label for="definitely">Definitely</label>
@@ -125,5 +123,6 @@
             </main>
         </div>
     </div>
+
 </body>
 </html>
